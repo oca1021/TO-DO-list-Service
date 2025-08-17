@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.chaechae.todo.TodoApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-17T14:01:52.854Z" hostname="headui-MacBookAir.local" time="0.356">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.chaechae.todo.TodoApplicationTests" time="0.356"/>
+  <system-out><![CDATA[23:01:51.993 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.chaechae.todo.TodoApplicationTests]: TodoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:01:52.040 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.chaechae.todo.TodoApplication for test class com.chaechae.todo.TodoApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-17T23:01:52.196+09:00  INFO 74206 --- [todo] [    Test worker] com.chaechae.todo.TodoApplicationTests   : Starting TodoApplicationTests using Java 21.0.8 with PID 74206 (started by head in /Users/head/Desktop/#QUEST1/백엔드 연습중/#0 ocatodo/TO-DO-list-Service)
+2025-08-17T23:01:52.196+09:00  INFO 74206 --- [todo] [    Test worker] com.chaechae.todo.TodoApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:01:52.506+09:00  INFO 74206 --- [todo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-17T23:01:52.569+09:00  INFO 74206 --- [todo] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-08-17T23:01:52.571+09:00  INFO 74206 --- [todo] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-17T23:01:52.813+09:00  INFO 74206 --- [todo] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-08-17T23:01:52.847+09:00  INFO 74206 --- [todo] [    Test worker] com.chaechae.todo.TodoApplicationTests   : Started TodoApplicationTests in 0.75 seconds (process running for 1.162)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/head/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.6/17b32fd9f57deef02842f7f05abc4ad8127fe34e/byte-buddy-agent-1.17.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
