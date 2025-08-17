@@ -1,8 +1,14 @@
-# TO DO list Service
-  TO DO list Service는 매일 일정을 관리하는 기록 서비스 입니다.
-## 사용기술
-- spring boot
-- eclipse
-- jdk17
-- gradle
-- postman
+# TO-DO LIST 서비스
+일정을 관리하는 서비스를 만들어보면서 백엔드 서버 개발 능력을 늘리기 위한 레포지토리입니다.
+## 사용 기술
+- 프레임워크 : 스프링부트
+- IDE : Eclipse
+- 프로그래밍 언어 : JAVA(JDK17)
+- 빌드 도구 : Gradle
+- 테스트 도구 : PostMan
+- 데이터베이스 : H2-DATABASE(인메모리)
+## 개발 현황
+2025-08-16
+3계층 아키텍처 적용
+2025-08-17
+MyBatis 적용
