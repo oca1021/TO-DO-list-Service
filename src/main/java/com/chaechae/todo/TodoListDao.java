@@ -1,9 +1,7 @@
 package com.chaechae.todo;
 
 import java.sql.Connection;
-import java.sql.Date;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
@@ -16,16 +14,21 @@ import org.springframework.stereotype.Repository;
 public class TodoListDao {
 
 	private final static Logger logger = LoggerFactory.getLogger(TodoListDao.class);
-
+	
     @Autowired
     private DataSource dataSource;
+
+    @Autowired
+    private TodoListMapper todoListMapper;
 	
-	public void inserTodo(TodoItemDto itemDto) {
+	public void insertTodo(TodoItemDto itemDto) {
 	
+		todoListMapper.insertTodo(itemDto);
+		
         Connection conn = null;
         PreparedStatement pstmt = null;
 
-        try {
+/*        try {
             String sql = "INSERT INTO TO_DO_ITEM (TITLE, CONTENT, START_DT, REG_DT) VALUES (?, ?, ?, ?)";
             conn = dataSource.getConnection();
             pstmt = conn.prepareStatement(sql);
@@ -54,6 +57,6 @@ public class TodoListDao {
 				e.printStackTrace();
 			}
         }
-		
+*/		
 	}
 }
