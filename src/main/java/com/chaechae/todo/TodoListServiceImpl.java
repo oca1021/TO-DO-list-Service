@@ -25,7 +25,7 @@ public class TodoListServiceImpl implements TodoListService {
 		itemDto.setRegtDt(new Date());
 		
 		
-		listDao.inserTodo(itemDto);
+		listDao.insertTodo(itemDto);
 		
 	}
 
