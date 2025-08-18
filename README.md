@@ -7,8 +7,17 @@
 - 빌드 도구 : Gradle
 - 테스트 도구 : PostMan
 - 데이터베이스 : H2-DATABASE(인메모리)
+
+## git update
+git checkout main
+git pull origin main
+git checkout chaea_8
+git merge main
+
 ## 개발 현황
 2025-08-16
 3계층 아키텍처 적용
 2025-08-17
 MyBatis 적용
+
+Delete DAO class and apply ResponseEntity

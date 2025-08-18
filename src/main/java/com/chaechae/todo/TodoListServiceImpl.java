@@ -13,7 +13,7 @@ public class TodoListServiceImpl implements TodoListService {
 	private final static Logger logger = LoggerFactory.getLogger(TodoListServiceImpl.class);
 
 	@Autowired
-	private TodoListDao listDao;
+	private TodoListMapper listMapper;
 	
 	/**
 	 * TODO : todo item insert 인터페이스 구현
@@ -23,9 +23,8 @@ public class TodoListServiceImpl implements TodoListService {
 		logger.info("TodoListServiceImpl insertTodo start");
 		
 		itemDto.setRegtDt(new Date());
-		
-		
-		listDao.insertTodo(itemDto);
+		// mapper		
+		listMapper.insertTodo(itemDto);
 		
 	}
 
