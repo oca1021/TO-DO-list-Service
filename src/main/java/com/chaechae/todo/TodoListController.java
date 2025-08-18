@@ -6,7 +6,10 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @ResponseBody
+@CrossOrigin("*")
 public class TodoListController {
 	
 
@@ -56,15 +60,20 @@ public class TodoListController {
 	 * TODO : 투두리스트 생성
 	 */
 	@PostMapping("/insertTodo")
-	public void insertTodo(@RequestBody TodoItemDto itemDto) {
+	public ResponseEntity<String> insertTodo(@RequestBody TodoItemDto itemDto) {
 		logger.info("TodoListContoller insertTodo start");
 		logger.info("title : " + itemDto.getTitle() );
 		logger.info("content : " + itemDto.getContent() );
 		logger.info("startDt : " + itemDto.getStartDt() );
 		logger.info("regDt : " + itemDto.getRegDt() );
 		
-		listService.insertTodo(itemDto);
+		try {
+			listService.insertTodo(itemDto);
+		} catch( Exception e ) {
+			return new ResponseEntity<String>("fail", HttpStatus.EXPECTATION_FAILED);
+		}
 		
+		return new ResponseEntity<String>("success", HttpStatus.CREATED);
 	}	
 
 	/**
