@@ -20,4 +20,8 @@ git merge main
 2025-08-17
 MyBatis 적용
 
-Delete DAO class and apply ResponseEntity
+2025-08-18
+DAO 파일 삭제 후 Service에서 Mapper로 바로 호출 되도록 변경
+Controller에 CrossOrigin 어노테이션 추가
+insertTodo API 반환 타입 ResponseEntity<String>로 변경
+ngrok로 back-end Server 터널링
