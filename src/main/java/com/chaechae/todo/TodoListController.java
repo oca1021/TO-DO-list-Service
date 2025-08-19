@@ -65,15 +65,35 @@ public class TodoListController {
 		logger.info("title : " + itemDto.getTitle() );
 		logger.info("content : " + itemDto.getContent() );
 		logger.info("startDt : " + itemDto.getStartDt() );
+		logger.info("comleted :" + itemDto.isCompleted() );
 		logger.info("regDt : " + itemDto.getRegDt() );
+		
+		// 필수값 체크(제목)
+		if( itemDto.getTitle() == null ) {
+			return new ResponseEntity<String>("제목을 입력해주세요.", HttpStatus.EXPECTATION_FAILED);
+		}
+		// 필수값 체크(시작일)
+		if( itemDto.getStartDt() == null ) {
+			return new ResponseEntity<String>("시작 일자를 지정해주세요.", HttpStatus.EXPECTATION_FAILED);
+		}
+		
+		// 길이 체크(제목)
+		if( itemDto.getTitle().length() > 255 ) {
+			return new ResponseEntity<String>("제목 길이를 200글자 이내로 작성해주세요.", HttpStatus.EXPECTATION_FAILED);
+		}
+
+		// 길이 체크(내용)
+		if( itemDto.getContent() != null && itemDto.getContent().length() > 3000 ) {
+			return new ResponseEntity<String>("내용의 길이를 3000글자 이내로 작성해주세요.", HttpStatus.EXPECTATION_FAILED);
+		}
 		
 		try {
 			listService.insertTodo(itemDto);
 		} catch( Exception e ) {
-			return new ResponseEntity<String>("fail", HttpStatus.EXPECTATION_FAILED);
+			return new ResponseEntity<String>("전산팀에 문의하세요.", HttpStatus.EXPECTATION_FAILED);
 		}
 		
-		return new ResponseEntity<String>("success", HttpStatus.CREATED);
+		return new ResponseEntity<String>("등록이 완료되었습니다.", HttpStatus.CREATED);
 	}	
 
 	/**
