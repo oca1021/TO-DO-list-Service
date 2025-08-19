@@ -8,6 +8,7 @@ public class TodoItemDto {
 	private String title;
 	private String content;
 	private Date startDt;
+	private Boolean completed;
 	private Date regDt;
 	private Date modiDt;
 	
@@ -41,6 +42,15 @@ public class TodoItemDto {
 	
 	public void setStartDt(Date startDt) {
 		this.startDt = startDt;
+	}
+
+	// Boolean은 get이 아닌, is로 써야함
+	public Boolean isCompleted() {
+		return this.completed;
+	}
+	
+	public void setCompleted(Boolean completed) {
+		this.completed = completed;
 	}
 	
 	public Date getModiDt() {

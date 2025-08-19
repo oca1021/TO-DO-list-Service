@@ -4,10 +4,10 @@
 
 	<insert id="insertTodo" parameterType="com.chaechae.todo.TodoItemDto">
 		INSERT INTO TO_DO_ITEM (
-			TITLE,    CONTENT,    START_DT,   REG_DT
+			TITLE,    CONTENT,    START_DT,   COMPLETED,    REG_DT
 	    	) 
 	    VALUES (
-	    	#{title}, #{content}, #{startDt}, #{regDt} 
+	    	#{title}, #{content}, #{startDt}, #{completed}, #{regDt} 
 			)
 	</insert>
 

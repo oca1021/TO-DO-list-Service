@@ -25,3 +25,10 @@ DAO 파일 삭제 후 Service에서 Mapper로 바로 호출 되도록 변경
 Controller에 CrossOrigin 어노테이션 추가
 insertTodo API 반환 타입 ResponseEntity<String>로 변경
 ngrok로 back-end Server 터널링
+
+2025-08-19
+H2-DataBase(inmemory db) -> postgreSql 변경 // 
+todoitem table 구조 변경 (+ completed 컬럼 추가)
+postgreSql DB안에 todoitem table 생성
+validation 적용
+insertTodo api 완료

@@ -22,7 +22,9 @@ public class TodoListServiceImpl implements TodoListService {
 	public void insertTodo(TodoItemDto itemDto) {
 		logger.info("TodoListServiceImpl insertTodo start");
 		
+		// 초기값 지정
 		itemDto.setRegtDt(new Date());
+		
 		// mapper		
 		listMapper.insertTodo(itemDto);
 		
