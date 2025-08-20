@@ -1,6 +1,8 @@
 package com.chaechae.todo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
@@ -31,12 +33,30 @@ public class TodoListController {
 	
     /**
 	 * TODO : 투두리스트 전체 조회
+	 * 조건 없이 무조건 전체 투두리스트 조회하는 기능
 	 */
 	@GetMapping("/todoAllList")
-	public boolean getTodoAllList() {
+	public List<TodoItemDto> getTodoAllList() {
+		// 로그 찍는다(해당 메서드 시작한다는 로그를 찍는다)
+		logger.info("TodoListContoller getTodoAllList start");
+		// 조건이 들어오지 않으니 인자값 밸리데이션은 필요없겠다.
 		
+		List<TodoItemDto> itemDtoList = null;
 		
-		return true;
+		// 서비스의 getTodoAllList를 조회한다.
+		//itemDtoList = listService.getTodoList();
+		
+		// 테스트 데이터 생성
+		itemDtoList = new ArrayList<>();
+		TodoItemDto item1 = new TodoItemDto();
+		item1.setTitle("test1");
+		itemDtoList.add(item1);
+		TodoItemDto item2 = new TodoItemDto();
+		item2.setTitle("test2");
+		itemDtoList.add(item2);
+		
+		// 전체 투두리스트를 조회하는 기능이니, 전체 투두리스트를 반환해야겠다. => 그러니까 반환타입도 변경해야겠다.
+		return itemDtoList;
 	}
 	
 	/**
