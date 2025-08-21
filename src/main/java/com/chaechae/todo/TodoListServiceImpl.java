@@ -1,6 +1,7 @@
 package com.chaechae.todo;
 
 import java.util.Date;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,6 +30,17 @@ public class TodoListServiceImpl implements TodoListService {
 		listMapper.insertTodo(itemDto);
 		
 	}
+
+	/**
+	 * TODO : todo item list 인터페이스 구현
+	 */
+	@Override
+	public List<TodoItemDto> getTodoList() {
+		
+		return listMapper.getTodoList();
+	}
+	
+		
 
 	
 	

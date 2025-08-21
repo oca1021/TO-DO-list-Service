@@ -44,17 +44,17 @@ public class TodoListController {
 		List<TodoItemDto> itemDtoList = null;
 		
 		// 서비스의 getTodoAllList를 조회한다.
-		//itemDtoList = listService.getTodoList();
+		itemDtoList = listService.getTodoList();
 		
 		// 테스트 데이터 생성
-		itemDtoList = new ArrayList<>();
-		TodoItemDto item1 = new TodoItemDto();
-		item1.setTitle("test1");
-		itemDtoList.add(item1);
-		TodoItemDto item2 = new TodoItemDto();
-		item2.setTitle("test2");
-		itemDtoList.add(item2);
-		
+//		itemDtoList = new ArrayList<>();
+//		TodoItemDto item1 = new TodoItemDto();
+//		item1.setTitle("test1");
+//		itemDtoList.add(item1);
+//		TodoItemDto item2 = new TodoItemDto();
+//		item2.setTitle("test2");
+//		itemDtoList.add(item2);
+//		
 		// 전체 투두리스트를 조회하는 기능이니, 전체 투두리스트를 반환해야겠다. => 그러니까 반환타입도 변경해야겠다.
 		return itemDtoList;
 	}
