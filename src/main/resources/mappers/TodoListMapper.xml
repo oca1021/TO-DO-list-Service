@@ -11,6 +11,10 @@
 			)
 	</insert>
 
+	<select id="getTodoList" resultType="com.chaechae.todo.TodoItemDto">
+		SELECT * FROM TO_DO_ITEM
+	</select>
+
 
 
 </mapper>
