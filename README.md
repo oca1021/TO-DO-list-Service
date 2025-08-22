@@ -32,10 +32,13 @@ H2-DataBase(inmemory db) -> postgreSql 변경
 todoitem table 구조 변경 (+ completed 컬럼 추가)   
 postgreSql DB안에 todoitem table 생성   
 validation 적용   
-insertTodo api 완료   
+`insertTodo` api 완료   
 
-2025-08-20   
-전체조회 api 개발   
+2025-08-20      
+전체조회 api 개발       
 
 2025-08-21   
-전제조회 api 수정(조회 쿼리 추가)   
+전체조회 `todoAllList` api 수정(조회 쿼리 추가)   
+
+2025-08-22   
+`deleteTodo` api 생성  
