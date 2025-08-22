@@ -39,6 +39,16 @@ public class TodoListServiceImpl implements TodoListService {
 		
 		return listMapper.getTodoList();
 	}
+
+	/**
+	 * TODO : todo item delete 인터페이스 구현
+	 */
+	@Override
+	public int deleteTodo(TodoItemDto itemDto) {
+	
+		return listMapper.deleteTodo(itemDto);
+		
+	}
 	
 		
 
