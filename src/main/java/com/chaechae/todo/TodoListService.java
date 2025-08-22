@@ -10,4 +10,5 @@ public interface TodoListService {
 
 	public List<TodoItemDto> getTodoList();
 	
+	public int deleteTodo(TodoItemDto itemDto);
 }

@@ -69,7 +69,7 @@ public class TodoListController {
 		logger.info("seq  : " + seq);
 		logger.info("============");
 		logger.info("to-do item(" + seq + ") select");
-		logger.info("TOdoListContoller getTodoView end");
+		logger.info("TodoListContoller getTodoView end");
 		
 		Map<String, Integer> map = new HashMap<>();
 		map.put("seq", seq);
@@ -87,6 +87,7 @@ public class TodoListController {
 		logger.info("startDt : " + itemDto.getStartDt() );
 		logger.info("comleted :" + itemDto.isCompleted() );
 		logger.info("regDt : " + itemDto.getRegDt() );
+		logger.info("TodoListContoller insertTodo end");
 		
 		// 필수값 체크(제목)
 		if( itemDto.getTitle() == null ) {
@@ -123,7 +124,17 @@ public class TodoListController {
 	/**
 	 * TODO : 투두리스트 삭제 
 	 */	
+	@PostMapping("/deleteTodo")
+	public ResponseEntity<String> deleteTodo(@RequestBody TodoItemDto itemDto) {
+		logger.info("TodoListContoller deleteTodo start");
+		
+		int deleteCount = listService.deleteTodo(itemDto);
+		
+		if( deleteCount > 0 ) {
+			return new ResponseEntity<String>("삭제가 완료되었습니다.", HttpStatus.OK);
+		} else {
+			return new ResponseEntity<String>("전산팀에 문의하세요.", HttpStatus.EXPECTATION_FAILED);
+		}
 	
-
-	
+	}
 }

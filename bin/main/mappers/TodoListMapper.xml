@@ -16,5 +16,10 @@
 	</select>
 
 
+	<delete id="deleteTodo" parameterType="com.chaechae.todo.TodoItemDto">
+		DELETE FROM TO_DO_ITEM
+		 WHERE SEQ = #{seq}
+	</delete>
+
 
 </mapper>
