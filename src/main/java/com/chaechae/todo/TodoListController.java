@@ -120,7 +120,19 @@ public class TodoListController {
 	/**
 	 * TODO : 투두리스트 수정  
 	 */
+	@PostMapping("/updateTodo")
+	public ResponseEntity<String> updateTodo(@RequestBody TodoItemDto itemDto) {
+		logger.info("TodoListContoller updateTodo start");
+
+		int updateCount = listService.updateTodo(itemDto);
 		
+		if( updateCount > 0 ) {
+			return new ResponseEntity<String>("수정이 완료되었습니다.", HttpStatus.OK);
+		} else {
+			return new ResponseEntity<String>("전산팀에 문의하세요.", HttpStatus.EXPECTATION_FAILED);
+		}
+		
+	}
 	/**
 	 * TODO : 투두리스트 삭제 
 	 */	

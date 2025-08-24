@@ -21,5 +21,23 @@
 		 WHERE SEQ = #{seq}
 	</delete>
 
+	<update id="updateTodo" parameterType="com.chaechae.todo.TodoItemDto">
+		UPDATE TO_DO_ITEM
+		   SET SEQ = #{seq}
+		     <if test="title != null">
+		      ,TITLE = #{title}
+			 </if>
+		     <if test="content != null">
+		      ,CONTENT = #{content}
+		     </if>
+		     <if test="startDt != null">
+		      ,START_DT = #{startDt}
+		     </if> 
+		     <if test="completed != null">
+		      ,COMPLETED = #{completed}
+		     </if>
+		      ,MODI_DT = #{modiDt}
+		 WHERE SEQ = #{seq}
+	</update>
 
 </mapper>
