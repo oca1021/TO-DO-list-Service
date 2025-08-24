@@ -12,5 +12,7 @@ public interface TodoListMapper {
 	public List<TodoItemDto> getTodoList();
 	
 	public int deleteTodo(TodoItemDto itemDto);
+
+	public int updateTodo(TodoItemDto itemDto);
 	
 }
