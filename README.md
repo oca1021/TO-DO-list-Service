@@ -41,4 +41,7 @@ validation 적용
 전체조회 `todoAllList` api 수정(조회 쿼리 추가)   
 
 2025-08-22   
-`deleteTodo` api 생성  
+`deleteTodo` api 생성   
+
+2025-08-24
+`updateTodo` api 생성
