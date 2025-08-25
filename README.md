@@ -46,9 +46,11 @@ validation 적용
 2025-08-24   
 `updateTodo` api 생성   
 
-앞으로 남은 작업   
+#앞으로 남은 작업   
 1.페이징 처리 추가   
 2.updateTodo api validation 추가   
+3.상세조회 api 수정
+4.Swagger를 통해 api 명세서 작성
 
 
 
