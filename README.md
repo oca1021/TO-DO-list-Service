@@ -1,6 +1,8 @@
-# TO-DO LIST 서비스
-일정을 관리하는 서비스를 만들어보면서 백엔드 서버 개발 능력을 늘리기 위한 레포지토리입니다.
-## 사용 기술
+# TO DO LIST
+> 기본적인 CRUD를 학습하기 위해 일정 관리 서비스를 개발하는 레포지토리입니다.   
+> 필요한 기술은 점진적으로 적용할 예정입니다.
+
+## SKILLS
 - 프레임워크 : `SpringBoot`
 - IDE : `Eclipse`
 - 프로그래밍 언어 : `JAVA`(JDK17)
@@ -58,6 +60,7 @@ validation 적용
 - mybatis log 추가
 - dto alias 적용
 - 목록 조회 시 조회 조건 추가
+- JavaDocs 추가
 
 
 
