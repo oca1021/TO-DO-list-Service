@@ -54,6 +54,9 @@ validation 적용
 - Swagger를 통해 api 명세서 작성
 - render postgresql 사용
 - render를 통해 배포
+- mybatis log 추가
+- dto alias 적용
+- 목록 조회 시 조회 조건 추가
 
 
 
