@@ -47,7 +47,7 @@ validation 적용
 `updateTodo` api 생성   
 
 # to do 작업 목록
-- 페이징 처리 추가
+- 페이징 처리 추가(page, size, offset 파라미터 필요)
 - `todoAllList` api 조건문 추가
 - `updateTodo` api validation 추가
 - 상세조회 api 수정
