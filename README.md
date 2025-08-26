@@ -1,12 +1,13 @@
 # TO-DO LIST 서비스
 일정을 관리하는 서비스를 만들어보면서 백엔드 서버 개발 능력을 늘리기 위한 레포지토리입니다.
 ## 사용 기술
-- 프레임워크 : 스프링부트
-- IDE : Eclipse
-- 프로그래밍 언어 : JAVA(JDK17)
-- 빌드 도구 : Gradle
-- 테스트 도구 : PostMan
-- 데이터베이스 : H2-DATABASE(인메모리)
+- 프레임워크 : `SpringBoot`
+- IDE : `Eclipse`
+- 프로그래밍 언어 : `JAVA`(JDK17)
+- 빌드 도구 : `Gradle`
+- 테스트 도구 : `PostMan`
+- 데이터베이스 : `H2-DATABASE`(인메모리), `postgreSql`
+- SQL Mapper : `Mybatis`
 
 ## git update
 git checkout main   
