@@ -11,6 +11,14 @@
 - 데이터베이스 : `H2-DATABASE`(인메모리), `postgreSql`
 - SQL Mapper : `Mybatis`
 
+## API 목록
+> API URI는 임시로 작성했습니다.
+1. 전체 조회 `/todoAllList`
+2. 상세 조회 `/todoView`
+3. 신규 생성 `/insertTodo`
+4. 수정 `/updateTodo`
+5. 삭제 `/deleteTodo`
+
 ## git update
 git checkout main   
 git pull origin main   
