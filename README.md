@@ -57,6 +57,9 @@ validation 적용
 2025-08-24   
 `updateTodo` api 생성   
 
+2025-08-27
+`TodoListService.java`의 `deleteTodo` 메서드에 JavaDocs 추가
+
 # to do 작업 목록
 - 페이징 처리 추가(page, size, offset 파라미터 필요)
 - `todoAllList` api 조건문 추가
