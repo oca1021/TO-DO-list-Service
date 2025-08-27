@@ -10,6 +10,12 @@ public interface TodoListService {
 
 	public List<TodoItemDto> getTodoList();
 	
+    /**
+     * 특정 할 일 항목을 삭제합니다.
+     *
+     * @param itemDto 삭제할 할 일 항목의 seq값을 담은 DTO
+     * @return 삭제된 개수
+     */
 	public int deleteTodo(TodoItemDto itemDto);
 
 	public int updateTodo(TodoItemDto itemDto);
