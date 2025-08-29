@@ -65,14 +65,16 @@ validation 적용
 - `todoAllList` api 조건문 추가
 - `updateTodo` api validation 추가
 - 상세조회 api 수정
-- Swagger를 통해 api 명세서 작성
+- Swagger UI를 통해 api 명세서 작성
 - render postgresql 사용
 - render를 통해 배포
 - mybatis log 추가
 - dto alias 적용
 - 목록 조회 시 조회 조건 추가
 - JavaDocs 추가
-
+- 다건 삭제 적용
+- 다건 수정 적용
+- 다건 추가 적용
 
 
 
