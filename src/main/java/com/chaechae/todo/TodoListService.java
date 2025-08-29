@@ -2,6 +2,11 @@ package com.chaechae.todo;
 
 import java.util.List;
 
+/**
+ * 투두리스트(Todo list)와 관련된 비즈니스 로직을 처리하는 서비스 인터페이스입니다.
+ * 이 인터페이스는 할 일 항목의 생성, 목록 조회, 상세 조회, 수정, 삭제 기능을 정의합니다.
+ * TODO: 다건 수정, 다건 삭제 기능 추가 및 목록 조회 시 페이징, 정렬, 조건 추가 필요
+ */
 public interface TodoListService {
 	/**
 	 * TODO : todo item insert
