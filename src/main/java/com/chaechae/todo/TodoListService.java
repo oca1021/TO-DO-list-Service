@@ -18,5 +18,11 @@ public interface TodoListService {
      */
 	public int deleteTodo(TodoItemDto itemDto);
 
+    /**
+     * 특정 할 일 항목을 수정합니다.
+     *
+     * @param itemDto 수정할 할 일 항목의 정보를 담은 DTO
+     * @return 수정된 개수
+     */
 	public int updateTodo(TodoItemDto itemDto);
 }
