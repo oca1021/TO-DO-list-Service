@@ -67,7 +67,11 @@ public class TodoListController {
 	
 	/**
 	 * TODO : 투두리스트 상세 조회
-	 */
+     *        TodoItemDto 객체 반환
+     *
+     * @param seq 조회할 할 일 항목의 seq값
+     * @return 조회된 할 일 항목 객체
+     */
 	@GetMapping("/todoView")
 	public Map<String, Integer> getTodoView(@RequestParam int seq) {
 		logger.info("TodoListContoller getTodoView start");
