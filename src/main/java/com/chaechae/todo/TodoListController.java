@@ -37,7 +37,9 @@ public class TodoListController {
 	
     /**
 	 * TODO : 투두리스트 전체 조회
-	 * 조건 없이 무조건 전체 투두리스트 조회하는 기능
+     *        title, content 등의 조건 추가
+     *        정렬 기준 추가
+     *        페이징 추가
 	 */
 	@GetMapping("/todoAllList")
 	public List<TodoItemDto> getTodoAllList() {
